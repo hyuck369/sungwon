@@ -203,6 +203,100 @@ header.scrolled .logo-img {
   box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
 }
 
+/* About Section */
+.about-section {
+  position: relative;
+  z-index: 10;
+  padding-bottom: 50px;
+}
+
+.about-card {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  padding: 0;
+  gap: 0;
+}
+
+.about-image {
+  flex: 1;
+  min-width: 350px;
+  background-color: rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-placeholder {
+  color: var(--text-muted);
+  font-size: 1.2rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-content {
+  flex: 2;
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #111827;
+}
+
+.about-headline {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  line-height: 1.4;
+  color: #000;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 20px;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+  color: #374151;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.about-text strong {
+  color: #111827;
+  font-weight: 600;
+}
+
+.signature {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.signature p {
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #000;
+}
+
+.ceo-name {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 900px) {
+  .about-card {
+    flex-direction: column;
+  }
+  .about-image {
+    min-height: 400px;
+  }
+  .about-content {
+    padding: 30px;
+  }
+  .about-headline {
+    font-size: 1.5rem;
+  }
+}
+
 /* Sections */
 section {
   padding: 100px 20px;
